@@ -1,73 +1,112 @@
 <!DOCTYPE html>
 <html lang="Indonesia">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REDMITOTO Slot Gacor</title>
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
-    <header class="header">
-        <div class="logo-box">
-        <img src="gambar/logo.png" alt="logo" />
-        </div>
-    </header>
-    <style>
-        a {
-            text-decoration: none;
-            color: #000;
-        }
-    </style>
-    <div class="dual-box">
-        <div class="box-daftar">
-        <a href="https://redmilogin.com/register?referral_code=gratis"class="box-daftar" target="_blank"><h2>DAFTAR</h2></a>  
+<header>
+  <!-- Baris atas: logo kiri + marquee kanan -->
+  <div class="top-bar">
+    <div class="logo-box">
+      <img src="file:///c:/efhat/gambar/logo.png" alt="logo" />
     </div>
-    <div class="box-login">
-        <a href="https://redmilogin.com/register?referral_code=gratis"class="box-login" target="_blank"><h2>LOGIN</H2></a>
+    <div class="nav-search">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        REDMITOTO Situs Terpercaya dan Bonafit Sejak 2013
+      </marquee>
     </div>
-   <div class="slideshow-container">
-  <img src="gambar/gambar1.png" class="slide active" alt="baner kemerdekaan"width="70%"height="70%">
-  <img src="gambar/gambar2.webp" class="slide" alt="Gambar2"width="70%"height="70%">
-  <img src="gambar/gambar3.webp" class="slide" alt="Gambar3"width="70%"height="70%">
-</div>
-   <script>
-    const slides = document.querySelectorAll(".slide");
-    let current = 0;
+  </div>
 
-    setInterval(() => {
-      slides[current].classList.remove("active");
-      current = (current + 1) % slides.length;
-      slides[current].classList.add("active");
-    }, 5000);
-  </script>
-    <main>
-        <div class="container">
-            <div style="color: white;"><P><h2>Selamat Datang di Redmitoto!
-Redmitoto adalah bandar online terpercaya dan terbesar di Indonesia, menyediakan berbagai permainan slot gacor yang menguntungkan.<p></h2></div>
-<div></div>
-    </main>
-    <footer>
-    <a href="https://amp.rtpselalu.com"class="footer" target="_blank"><h class="blink-text">RTP SLOT DAN PREDIKSI HARIAN GRATIS</h2></a>
-    </footer>
-    <script src="scripts/main.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            console.log('Document is ready!');
-            // Additional JavaScript can be added here
-        });
-    </script>
-    <style>
-         html, body {
-        height: 100%;
-        margin: 0;
-      }
+  <!-- Baris bawah: navbar -->
+  <nav>
+    <ul>
+      <li class="menu-fire">
+        <a href="#" data-page="home">
+          <img src="file:///C:/efhat/gambar/logoku" alt="icon">
+          Redmitoto
+        </a>
+      </li>
+      <li class="menu-fire">
+        <a href="https://redmilogin.com/register?referral_code=gratis" target="_blank">
+          <img src="file:///C:/efhat/gambar/logoku" alt="icon">
+          Situs Redmitoto
+        </a>
+      </li>
+      <li class="menu-fire">
+        <a href="https://www.rtpselalu.com/" target="_blank">
+            <img src="file:///C:/efhat/gambar/logoku" alt="icon">
+            RTP Redmitoto
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+<style>
+/* Baris atas */
+.top-bar {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0);
+  padding: 5px 10px;
+}
+
+.logo-box img {
+  height: 50px;
+  width: auto;
+  margin-right: 15px;
+}
+
+.nav-search {
+  flex: 1; /* Biar marquee isi sisa ruang */
+}
+
+.nav-search marquee {
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+}
+
+/* Navbar */
+nav {
+  background: rgba(0,0,0,0.8);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 10px;
+  margin: 0;
+}
+
+nav li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background 0.3s;
+}
+
+nav li a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+nav li img {
+  width: 18px;
+  height: 18px;
+  margin-right: 6px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+}
       body {
-         background-image: url('gambar/bgredmi.jpg');
+         background-image: url('file:///C:/efhat/gambar/backgroundred');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    min-height: 100vh;
+    min-height: 100vh
     height: 10%;
     margin: 0;
         background-color: rgb(255, 255, 255);
@@ -75,105 +114,141 @@ Redmitoto adalah bandar online terpercaya dan terbesar di Indonesia, menyediakan
   font-family: Arial, sans-serif;
   text-align: center;
 }
-
-.header {
-  display: flex;
-  background-color: #ffffff00;           
-  align-items: center;     
-  padding: 20px;
-}
-
-.logo-box {
-  flex: 0 0 auto;   
-}
-
-.logo {
-  width: 100px;
-  height: auto;
-}
-
-.title-box {
-  flex: 1;                  
-  text-align: center;       
-}
-.dual-box {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 15px;
-  flex-wrap: wrap;
-  border-radius: 4px;
-  margin-top: 16;
-  max-width: 1000px;
-  margin-left: auto;
-    margin-right: auto;
-}  
-.box-daftar, .box-login {
-    flex: 1 1 40%;
-    min-width: 280px;
-    max-width: 400px;
-  line-height: 18px;
-  padding: 10px 20px;
-  background-color: #ff0000;
-  border-radius: 4px;
-  margin-top: 16px;
-  text-align: center;
-  box-sizing: content-box;
-  z-index: auto;
-}
-.box-daftar a, .box-login a {
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-footer {
-    background: linear-gradient(to right, black, black);
+   .product-page {
+    display: block;
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0);
     padding: 20px;
+    border-radius: 8px;
+  }
+  .product-images {
     text-align: center;
-}
-
-footer h2 {
+    position:relative;
+    max-width: 500px;
+    margin: auto;
+    height: 300px;
+    overflow: hidden;
+  }
+  .product-images img {
+    width: 100%;
+   height: 100%;
+    border-radius: 8px;
+    text-align: center;
+    display: inline-block;
+  }
+  .product-thumbs {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .product-thumbs img {
+    width: 400px;
+    height: 200px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: 2px solid transparent;
+  }
+  .product-thumbs img:hover {
+    border-color: #007bff;
+  }
+  .product-details {
+    color:white;
+    text-align: center;
+  }
+  .product-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px black;
+  }
+  .color-options, .size-options {
+    margin: 15px 0;
     color: white;
-    margin: 0;
-}
-@keyframes blink {
-  0%, 100% { color: red; }
-  50% { color: blue; }
-}
-.blink-text {
-  animation: blink 1s infinite;
-}
-.a {
-    text-decoration: none;
-}
-.content {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-    .slideshow-container {
-      width: 50%;
-      max-width: 600px;
-      margin: auto;
-      overflow: hidden;
-    }
+    font-size: 20px;
+    text-shadow: 2px 2px 4px black;
+  }
+  .color-btn, .size-btn {
+    border: 1px solid #ccc;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin: 3px;
+    cursor: pointer;
+  }
+  .color-btn.active, .size-btn.active {
+    border-color: #007bff;
+    background: #e6f0ff;
+  }
+  
+</style>
+<body>
+    <div class="product-page">
+  <!-- Gambar Produk -->
+<div class="product-images">
+  <!-- Gambar utama -->
+  <img id="slide-image" 
+       src="file:///C:/efhat/gambar/kemerdekaan.jpg" 
+       alt="Slide" 
+       style="width:100%; border-radius:8px;">
 
-    .slideshow-container img {
-      width: 100%;
-      height: auto;
-      display: none;
-    }
+  <!-- Tombol kiri -->
+  <button onclick="prevImage()" 
+          style="position:absolute; top:50%; left:10px; transform:translateY(-50%);
+                 background:rgb(255, 255, 255); color:rgb(0, 0, 0); border:none; 
+                 padding:10px; cursor:pointer; border-radius:50%;">&#10094;</button>
 
-    .slideshow-container img.active {
-      display: block;
-    }
-    </style>
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <meta name="description" content="Redmitoto - Bandar Online Terpercaya dan Terbesar Di ASIA. Nikmati permainan slot gacor dan berbagai event menarik.">
-    <meta name="keywords" content="Redmitoto, Bandar Online, Slot Gacor, Event Redmitoto, Terpercaya, Terbesar Di ASIA">
-    <meta name="author" content="Redmitoto Team">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="theme-color" content="#007bff"> 
-    </body>
+  <!-- Tombol kanan -->
+  <button onclick="nextImage()" 
+          style="position:absolute; top:50%; right:10px; transform:translateY(-50%);
+                 background:rgb(255, 255, 255); color:rgb(0, 0, 0); border:none; 
+                 padding:10px; cursor:pointer; border-radius:50%;">&#10095;</button>
+</div>
+<script>
+  // Daftar gambar
+  const slides = [
+    "file:///C:/efhat/gambar/kemerdekaan.jpg",
+    "file:///C:/efhat/gambar/hadiah.jpg",
+    "file:///C:/efhat/gambar/nextdp25.png"
+  ];
+
+  let currentSlide = 0;
+  const slideImage = document.getElementById("slide-image");
+
+  function showImage(index) {
+    currentSlide = (index + slides.length) % slides.length;
+    slideImage.src = slides[currentSlide];
+  }
+
+  function nextImage() {
+    showImage(currentSlide + 1);
+  }
+
+  function prevImage() {
+    showImage(currentSlide - 1);
+  }
+</script>
+  <!-- Detail Produk -->
+  <div class="product-details">
+    <div class="product-title">Bergabung Bersama Kami</div>
+    <div class="color-options">
+      <div>Pilihan:</div>
+      <button class="color-btn active" onclick="window.open('https://redmilogin.com/register?referral_code=gratis','_blank')">
+  DAFTAR
+      <button class="color-btn active" onclick="window.open('https://redmilogin.com/register?referral_code=gratis','_blank')">
+  LOGIN
+    </div>
+
+    <div class="size-options">
+Selamat Datang di Redmitoto! Redmitoto adalah bandar online terpercaya dan terbesar di Indonesia, menyediakan berbagai permainan slot gacor yang menguntungkan
+    </div>
+</div>
+
+<script>
+  function changeImage(el) {
+    document.getElementById('main-image').src = el.src;
+  }
+</script>
+
+</body>
 </html>
