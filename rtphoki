@@ -4,7 +4,7 @@
   <!-- Baris atas: logo kiri + marquee kanan -->
   <div class="top-bar">
     <div class="logo-box">
-      <img src="file:///c:/efhat/gambar/logo.png" alt="logo" />
+      <img src="gambar/logo.png" alt="logo" />
     </div>
     <div class="nav-search">
       <marquee behavior="scroll" direction="left" scrollamount="6">
@@ -18,19 +18,19 @@
     <ul>
       <li class="menu-fire">
         <a href="#" data-page="home">
-          <img src="file:///C:/efhat/gambar/logoku" alt="icon">
+          <img src="gambar/logoku" alt="icon">
           Redmitoto
         </a>
       </li>
       <li class="menu-fire">
         <a href="https://redmilogin.com/register?referral_code=gratis" target="_blank">
-          <img src="file:///C:/efhat/gambar/logoku" alt="icon">
+          <img src="gambar/logoku" alt="icon">
           Situs Redmitoto
         </a>
       </li>
       <li class="menu-fire">
         <a href="https://www.rtpselalu.com/" target="_blank">
-            <img src="file:///C:/efhat/gambar/logoku" alt="icon">
+            <img src="gambar/logoku" alt="icon">
             RTP Redmitoto
         </a>
       </li>
@@ -101,7 +101,7 @@ html, body {
     margin: 0;
 }
       body {
-         background-image: url('file:///C:/efhat/gambar/backgroundred');
+         background-image: url('gambar/backgroundred');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -188,7 +188,7 @@ html, body {
 <div class="product-images">
   <!-- Gambar utama -->
   <img id="slide-image" 
-       src="file:///C:/efhat/gambar/kemerdekaan.jpg" 
+       src="gambar/kemerdekaan.jpg" 
        alt="Slide" 
        style="width:100%; border-radius:8px;">
 
@@ -207,9 +207,9 @@ html, body {
 <script>
   // Daftar gambar
   const slides = [
-    "file:///C:/efhat/gambar/kemerdekaan.jpg",
-    "file:///C:/efhat/gambar/hadiah.jpg",
-    "file:///C:/efhat/gambar/nextdp25.png"
+    "gambar/kemerdekaan.jpg",
+    "gambar/hadiah.jpg",
+    "gambar/nextdp25.png"
   ];
 
   let currentSlide = 0;
