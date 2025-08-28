@@ -25,7 +25,7 @@ body {
 
 .container {
   position: relative;
-  width: 300px; /* area tombol */
+  width: 300px;
   height: 60px;
 }
 
@@ -51,6 +51,27 @@ button {
   left: 150px;
   top: 0;
 }
+
+/* Modal popup */
+.modal {
+  display: none; /* ⬅️ default sembunyi */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #222;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
 </style>
 </head>
 <body>
@@ -60,28 +81,40 @@ button {
 </div>
 
 <div class="container">
-  <button id="iya" onclick="alert('Farhat memang tampan 😎')">Iya</button>
+  <button id="iya">Iya</button>
   <button id="tidak">Tidak</button>
 </div>
 
+<!-- Modal -->
+<div id="popup" class="modal">
+  <div class="modal-content">Farhat memang tampan 😎</div>
+</div>
+
+<!-- confetti library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
 <script>
+const iya = document.getElementById('iya');
 const tidak = document.getElementById('tidak');
 const container = document.querySelector('.container');
+const popup = document.getElementById('popup');
 
 function moveTidak() {
   const maxX = container.offsetWidth - tidak.offsetWidth;
   const maxY = container.offsetHeight - tidak.offsetHeight;
-
   const newX = Math.floor(Math.random() * maxX);
   const newY = Math.floor(Math.random() * maxY);
-
   tidak.style.left = newX + 'px';
   tidak.style.top = newY + 'px';
 }
 
-// Tombol "Tidak" lari saat hover atau disentuh
 tidak.addEventListener('mouseover', moveTidak);
 tidak.addEventListener('touchstart', moveTidak);
+
+iya.addEventListener('click', () => {
+  popup.style.display = "flex"; // baru muncul pas klik
+  confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+});
 </script>
 
 </body>
