@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>TANYA JAWAB</title>
+<style>
+body {
+  background: #111;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.question p {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 300px;
+  height: 60px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+}
+
+#iya {
+  background-color: #2a9df4;
+  color: white;
+  left: 0;
+  top: 0;
+}
+
+#tidak {
+  background-color: #e94e77;
+  color: white;
+  left: 150px;
+  top: 0;
+}
+
+/* Modal popup */
+.modal {
+  display: none; /* ⬅️ default sembunyi */
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  background: #222;
+  padding: 20px 30px;
+  border-radius: 12px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+</style>
+</head>
+<body>
+
+<div class="question">
+  <p>APAKAH CHANDRO TAMPAN?</p>
+</div>
+
+<div class="container">
+  <button id="iya">Iya</button>
+  <button id="tidak">Tidak</button>
+</div>
+
+<!-- Modal -->
+<div id="popup" class="modal">
+  <div class="modal-content">Chandro memang tampan 😎</div>
+</div>
+
+<!-- confetti library -->
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+<script>
+const iya = document.getElementById('iya');
+const tidak = document.getElementById('tidak');
+const container = document.querySelector('.container');
+const popup = document.getElementById('popup');
+
+function moveTidak() {
+  const maxX = container.offsetWidth - tidak.offsetWidth;
+  const maxY = container.offsetHeight - tidak.offsetHeight;
+  const newX = Math.floor(Math.random() * maxX);
+  const newY = Math.floor(Math.random() * maxY);
+  tidak.style.left = newX + 'px';
+  tidak.style.top = newY + 'px';
+}
+
+tidak.addEventListener('mouseover', moveTidak);
+tidak.addEventListener('touchstart', moveTidak);
+
+iya.addEventListener('click', () => {
+  popup.style.display = "flex"; // baru muncul pas klik
+  confetti({ particleCount: 150, spread: 80, origin: { y: 0.6 } });
+});
+</script>
+
+</body>
+</html>
